@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exp Solutions - AI-Powered Lead Generation for B2B Growth">
+    <title>Exp Solutions | AI Lead Generation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        :root {
+            --tw-color-primary: #00d4ff;
+        }
+        
+        .tail-container * {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0a1729 0%, #11223d 100%);
+        }
+        
+        .section-header {
+            position: relative;
+        }
+        
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: #00d4ff;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 212 255 / 0.1), 0 8px 10px -6px rgb(0 212 255 / 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #00d4ff;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="tail-container">
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-inner">E</div>
+                    <div>
+                        <span class="heading-font text-2xl tracking-tighter font-semibold text-slate-900">exp</span>
+                        <span class="heading-font text-2xl tracking-tighter font-semibold text-cyan-500">solutions</span>
+                    </div>
+                </div>
+                
+                <!-- Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium text-slate-600">
+                    <a href="#how" class="nav-link">How It Works</a>
+                    <a href="#industries" class="nav-link">Industries</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="flex items-center gap-x-4">
+                    <a href="#contact" 
+                       class="px-6 py-2.5 text-sm font-semibold bg-white border border-slate-200 hover:border-cyan-400 text-slate-700 rounded-3xl flex items-center gap-x-2 transition-colors">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Get a Free Audit
+                    </a>
+                    <button onclick="window.location.href='#contact'" 
+                            class="md:hidden px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold rounded-3xl flex items-center">
+                        <i class="fa-solid fa-paper-plane mr-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg text-white py-24">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md text-white text-xs font-medium px-4 py-2 rounded-3xl mb-6 border border-white/20">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    MINNESOTA • NOW SERVING NATIONWIDE
+                </div>
+                
+                <h1 class="heading-font text-6xl md:text-7xl leading-none tracking-tighter font-semibold mb-6">
+                    AI that finds your<br>next customer.
+                </h1>
+                
+                <p class="text-2xl text-cyan-100 max-w-lg mb-8">
+                    We use <span class="font-semibold text-white">AI to solve lead generation problems</span> — so you can focus on closing deals.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" 
+                       class="px-8 py-4 bg-white text-slate-900 hover:bg-cyan-100 font-semibold rounded-3xl text-lg flex items-center gap-x-3 group">
+                        Start Generating Leads
+                        <i class="fa-solid fa-arrow-right group-active:rotate-45 transition-transform"></i>
+                    </a>
+                    
+                    <a href="#industries" 
+                       class="px-8 py-4 border border-white/60 hover:border-white/90 font-medium rounded-3xl text-lg flex items-center">
+                        See who we've helped →
+                    </a>
+                </div>
+                
+                <div class="mt-12 flex items-center gap-x-8 text-sm">
+                    <div class="flex -space-x-4">
+                        <div class="w-8 h-8 bg-white/20 backdrop-blur rounded-2xl border-2 border-white flex items-center justify-center text-xs font-bold">3×</div>
+                        <div class="w-8 h-8 bg-white/20 backdrop-blur rounded-2xl border-2 border-white flex items-center justify-center text-xs font-bold">AI</div>
+                    </div>
+                    <div>
+                        <p class="text-cyan-100 text-sm">Businesses using our AI see qualified leads in days — not months.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Visual Eye Candy -->
+            <div class="md:col-span-5 relative">
+                <div class="bg-gradient-to-br from-cyan-400/10 to-blue-600/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl">
+                    <div class="bg-white/95 text-slate-900 rounded-2xl p-6 shadow-xl">
+                        <div class="flex justify-between mb-6">
+                            <div class="flex items-center gap-x-2">
+                                <i class="fa-solid fa-robot text-cyan-500"></i>
+                                <span class="font-semibold">AI Lead Engine</span>
+                            </div>
+                            <span class="text-emerald-500 text-xs font-medium flex items-center">
+                                <i class="fa-solid fa-circle-dot mr-1 animate-pulse"></i> LIVE
+                            </span>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between bg-slate-100 rounded-2xl p-4">
+                                <div>MEP Engineering firm in Texas</div>
+                                <div class="text-emerald-500 font-semibold">+14 leads today</div>
+                            </div>
+                            <div class="flex items-center justify-between bg-slate-100 rounded-2xl p-4">
+                                <div>Pharmaceutical manufacturer in California</div>
+                                <div class="text-emerald-500 font-semibold">+9 leads today</div>
+                            </div>
+                            <div class="flex items-center justify-between bg-slate-100 rounded-2xl p-4">
+                                <div>Drone contractor in Florida</div>
+                                <div class="text-emerald-500 font-semibold">+22 leads today</div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center text-xs text-slate-400 mt-6 flex items-center justify-center gap-x-1">
+                            <i class="fa-solid fa-lock"></i>
+                            Your leads. Your pipeline. Powered by AI.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating badges -->
+                <div class="absolute -top-4 -right-4 bg-white text-slate-900 text-xs font-medium px-4 py-2 rounded-3xl shadow-xl flex items-center gap-x-2">
+                    <i class="fa-solid fa-chart-line text-emerald-500"></i>
+                    400% avg. pipeline growth
+                </div>
+                <div class="absolute -bottom-6 -left-4 bg-white text-slate-900 text-xs font-medium px-4 py-2 rounded-3xl shadow-xl flex items-center gap-x-2">
+                    <i class="fa-solid fa-magic text-violet-500"></i>
+                    No more cold calling
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="bg-white py-6 border-b">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-4 text-slate-400 text-sm font-medium">
+                <div class="flex items-center gap-x-2"><i class="fa-solid fa-check"></i> MEP Engineering</div>
+                <div class="flex items-center gap-x-2"><i class="fa-solid fa-check"></i> Pharmaceutical Manufacturing</div>
+                <div class="flex items-center gap-x-2"><i class="fa-solid fa-check"></i> Clinical Research</div>
+                <div class="flex items-center gap-x-2"><i class="fa-solid fa-check"></i> Commercial Truck Tires</div>
+                <div class="flex items-center gap-x-2"><i class="fa-solid fa-check"></i> Executive Coaching</div>
+                <div class="flex items-center gap-x-2"><i class="fa-solid fa-check"></i> Drone Contracting</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOW WE HELP / AI APPROACH -->
+    <section id="how" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-4 py-1 bg-cyan-100 text-cyan-600 text-xs font-semibold rounded-3xl">OUR APPROACH</span>
+                <h2 class="heading-font text-5xl tracking-tighter font-semibold text-slate-900 mt-4">AI that solves real business problems</h2>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">We don't sell tools. We deliver exponential growth through intelligent lead generation tailored to your exact market.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-8 card-hover shadow-sm">
+                    <div class="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-2xl flex items-center justify-center text-3xl mb-6">🔍</div>
+                    <h3 class="text-2xl font-semibold mb-3">Find Hidden Buyers</h3>
+                    <p class="text-slate-600">AI scans millions of signals across the web, LinkedIn, government data, and industry databases to surface decision-makers actively in buying mode.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 card-hover shadow-sm">
+                    <div class="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-2xl flex items-center justify-center text-3xl mb-6">📨</div>
+                    <h3 class="text-2xl font-semibold mb-3">Instant Personalization</h3>
+                    <p class="text-slate-600">Every outreach message is hyper-personalized at scale using real-time research — no generic templates.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 card-hover shadow-sm">
+                    <div class="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-2xl flex items-center justify-center text-3xl mb-6">📈</div>
+                    <h3 class="text-2xl font-semibold mb-3">Pipeline That Runs Itself</h3>
+                    <p class="text-slate-600">Automated follow-ups, qualification scoring, and CRM handoff so your sales team only talks to warm, high-intent prospects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section id="industries" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-4 py-1 bg-amber-100 text-amber-600 text-xs font-semibold rounded-3xl">PROVEN RESULTS</span>
+                <h2 class="heading-font text-5xl tracking-tighter font-semibold text-slate-900 mt-4">Industries we've helped scale</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest font-medium text-slate-500">Engineering &amp; Construction</span>
+                            <h3 class="text-2xl font-semibold mt-2">MEP Engineering</h3>
+                        </div>
+                        <i class="fa-solid fa-building text-4xl text-slate-200"></i>
+                    </div>
+                    <p class="mt-8 text-slate-600 leading-relaxed">Helped leading MEP firms book 40+ qualified project opportunities in their first 60 days.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest font-medium text-slate-500">Life Sciences</span>
+                            <h3 class="text-2xl font-semibold mt-2">Pharmaceutical Manufacturing</h3>
+                        </div>
+                        <i class="fa-solid fa-flask text-4xl text-slate-200"></i>
+                    </div>
+                    <p class="mt-8 text-slate-600 leading-relaxed">Generated enterprise-level leads for pharmaceutical equipment and contract manufacturing organizations.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest font-medium text-slate-500">Healthcare &amp; Research</span>
+                            <h3 class="text-2xl font-semibold mt-2">Clinical Research &amp; Operations</h3>
+                        </div>
+                        <i class="fa-solid fa-stethoscope text-4xl text-slate-200"></i>
+                    </div>
+                    <p class="mt-8 text-slate-600 leading-relaxed">Connected CROs and clinical sites with sponsors and trial partners at record speed.</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest font-medium text-slate-500">Heavy Industry</span>
+                            <h3 class="text-2xl font-semibold mt-2">Commercial Truck Tire Sales &amp; Distribution</h3>
+                        </div>
+                        <i class="fa-solid fa-truck text-4xl text-slate-200"></i>
+                    </div>
+                    <p class="mt-8 text-slate-600 leading-relaxed">Filled sales pipelines for regional and national commercial tire distributors across North America.</p>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest font-medium text-slate-500">Professional Services</span>
+                            <h3 class="text-2xl font-semibold mt-2">Executive &amp; Business Coaching</h3>
+                        </div>
+                        <i class="fa-solid fa-user-tie text-4xl text-slate-200"></i>
+                    </div>
+                    <p class="mt-8 text-slate-600 leading-relaxed">Helped high-ticket coaches and consultants book discovery calls with C-suite executives consistently.</p>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest font-medium text-slate-500">Aerospace &amp; Tech</span>
+                            <h3 class="text-2xl font-semibold mt-2">Drone Contracting &amp; Operations</h3>
+                        </div>
+                        <i class="fa-solid fa-drone text-4xl text-slate-200"></i>
+                    </div>
+                    <p class="mt-8 text-slate-600 leading-relaxed">Delivered commercial and government contracts for drone service providers and aerial inspection firms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-5">
+                <div class="sticky top-8">
+                    <span class="text-cyan-400 text-sm font-medium">BASED IN MINNESOTA • SERVING THE WORLD</span>
+                    <h2 class="heading-font text-5xl tracking-tighter font-semibold mt-3 leading-none">Small team.<br>Big results.</h2>
+                    <p class="mt-8 text-lg text-slate-300">Exp Solutions is a boutique AI lead generation studio founded in Minnesota. We combine cutting-edge AI with old-school hustle to deliver predictable, high-quality B2B leads for ambitious companies.</p>
+                    <div class="mt-10 flex items-center gap-x-6">
+                        <div class="flex -space-x-6">
+                            <div class="w-10 h-10 bg-white/10 rounded-2xl ring-2 ring-slate-900 flex items-center justify-center text-xl">🤖</div>
+                            <div class="w-10 h-10 bg-white/10 rounded-2xl ring-2 ring-slate-900 flex items-center justify-center text-xl">📍</div>
+                        </div>
+                        <p class="text-slate-400 text-sm">No fluff. No bloated agencies.<br>Just AI that works.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-7 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10">
+                <div class="text-slate-300 leading-relaxed text-lg">
+                    Whether you're an MEP engineering firm trying to win more projects, a pharmaceutical manufacturer looking for new distribution partners, or a drone contractor seeking government contracts — we turn your ideal customer profile into a steady stream of warm leads.
+                </div>
+                <div class="mt-12 pt-12 border-t border-white/10 grid grid-cols-3 gap-8 text-center text-sm">
+                    <div>
+                        <div class="text-4xl font-semibold text-cyan-400">24–48 hrs</div>
+                        <div class="text-slate-400 mt-2">First leads delivered</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-semibold text-cyan-400">100%</div>
+                        <div class="text-slate-400 mt-2">AI + human oversight</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-semibold text-cyan-400">No long contracts</div>
+                        <div class="text-slate-400 mt-2">Cancel anytime</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA / CONTACT -->
+    <section id="contact" class="py-24 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl tracking-tighter font-semibold">Ready for your next wave of leads?</h2>
+            <p class="mt-6 text-2xl text-cyan-100">Tell us about your business. We'll show you what AI can do for you.</p>
+            
+            <form id="leadForm" class="mt-12 max-w-xl mx-auto space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" id="name" placeholder="Your name" 
+                           class="bg-white/10 border border-white/20 focus:border-cyan-400 rounded-3xl px-6 py-5 text-white placeholder:text-white/50 outline-none">
+                    <input type="email" id="email" placeholder="Business email" 
+                           class="bg-white/10 border border-white/20 focus:border-cyan-400 rounded-3xl px-6 py-5 text-white placeholder:text-white/50 outline-none">
+                </div>
+                <input type="text" id="company" placeholder="Company name &amp; industry" 
+                       class="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-3xl px-6 py-5 text-white placeholder:text-white/50 outline-none">
+                <textarea id="message" rows="4" placeholder="Tell us a bit about your target customers..." 
+                          class="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-3xl px-6 py-5 text-white placeholder:text-white/50 outline-none"></textarea>
+                
+                <button type="button" onclick="submitFakeForm()" 
+                        class="w-full bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-semibold text-xl py-6 rounded-3xl flex items-center justify-center gap-x-3 transition-colors">
+                    SEND MESSAGE &amp; GET YOUR FREE LEAD AUDIT
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+            
+            <p class="text-xs text-slate-400 mt-8">Or email us directly at <a href="mailto:hello@expsolutions.ai" class="underline">hello@expsolutions.ai</a></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center text-white font-bold">E</div>
+                    <span class="heading-font text-3xl tracking-tighter font-semibold text-white">exp solutions</span>
+                </div>
+                
+                <div class="text-center md:text-right text-sm">
+                    © 2026 Exp Solutions • Minnesota, USA<br>
+                    AI Lead Generation • Built for B2B growth
+                </div>
+                
+                <div class="flex gap-x-6 text-2xl">
+                    <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded
+        function initializeTailwind() {
+            return {
+                config(userConfig = {}) {
+                    return {
+                        configUser: userConfig,
+                        theme: {
+                            extend: {}
+                        }
+                    }
+                },
+                theme(config) {
+                    return {
+                        ...this.defaultTheme(),
+                        ...config
+                    }
+                },
+                defaultTheme() {
+                    return {}
+                }
+            }
+        }
+        
+        // Simple fake form submission
+        function submitFakeForm() {
+            const form = document.getElementById('leadForm');
+            const btn = form.querySelector('button');
+            
+            const originalText = btn.innerHTML;
+            btn.innerHTML = `
+                <svg class="animate-spin h-5 w-5 mr-3 text-slate-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                </svg>
+                SENDING...
+            `;
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                alert("✅ Thank you! Your message has been received.\n\nA member of the Exp Solutions team will reach out within 24 hours with your free lead generation audit.");
+                form.reset();
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }, 1800);
+        }
+        
+        // Initialize on load
+        window.onload = function() {
+            // Any additional JS can go here
+            console.log('%c🚀 Exp Solutions 1-pager ready! Copy this file and open in your browser.', 'color:#00d4ff; font-weight:600');
+        }
+    </script>
+</body>
+</html>
